@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+  fx:controller="com.example.qr_generator.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+  </padding>
+  <TextField fx:id="searchTextFiled" promptText="Search" onKeyReleased="#onSearchButtonRelease"/>
+  <TableView fx:id="tableView" layoutX="25.0" layoutY="25.0" prefHeight="300.0" prefWidth="400.0"/>
+  <HBox spacing="10.0">
+    <TextField fx:id="nameTextField" promptText="Enter stock name here .."/>
+    <TextField fx:id="priceTextField" promptText="Enter price"/>
+  </HBox>
+  <Button text="Generate" onAction="#onHelloButtonClick"/>
+  <Label text="Designed and developed by Ajith VM for Changes inc." />
+</VBox>

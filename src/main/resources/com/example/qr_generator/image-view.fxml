@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+  fx:controller="com.example.qr_generator.ImageViewController">
+
+  <ImageView fx:id="imageView" fitHeight="100" fitWidth="300" preserveRatio="true"/>
+  <Button text="Print" onAction="#onPrintButtonClick"/>
+</VBox>
